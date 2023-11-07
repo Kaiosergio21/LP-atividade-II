@@ -6,47 +6,34 @@
 
 int main (){
 
+printf("número");
 
-    setlocale(LC_ALL,("portuguese"));
+int num,num2;
 
- float nota;
- float soma = 0;
+printf("insira um número");
+scanf("%d",&num);
 
- float contador = 0;
+fflush(stdin);
 
- float media;
-
-int resposta;
-
- 
-
-do
-{
-
-    printf("digite uma nota");
-  scanf("%f",&nota);
-
-soma+=nota;
-  contador++;
-
-  fflush(stdin);
-
-  
-  printf("gostaria de inserir mais uma nota ?\n 1 = sim 2= n�o");
-  scanf("%d",&resposta);
-
-  
- 
-} while (resposta != 2);
+printf("insira um número");
+scanf("%d",&num2);
 
 
 
-media = soma / contador;
+if(num2 > num){
 
-printf("m�dia:%.1f",media);
- 
+    printf("%d maior",num2);
+      printf("%d menor",num);
+}else{
+
+printf("%d menor",num2);
+      printf("%d mamior",num);
+
+
+}
 
 
 
     return 0;
+
 }
